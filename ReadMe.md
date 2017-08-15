@@ -1,6 +1,6 @@
 # dice-roll
 
-A simple API that accepts POST or GET requests to roll n-sided dice x number of times.
+A simple API that accepts POST or GET requests to roll n-sided die x number of times.
 
 [Sample Deployed](https://dice-roll-dehmcdhbop.now.sh/) using [now](https://github.com/zeit/now) and [micro](https://github.com/zeit/micro)
 
