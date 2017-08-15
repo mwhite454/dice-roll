@@ -26,6 +26,7 @@ The response is a simple JSON object:
 ```
 ---
 ## POST method
+
 To request a roll of the dice, send a JSON object with one array, keyed as "rolls". You can include as many pairs of values as you wish, the array should be a simple list of numeric values. The first value in each pair is the number of rolls (*n*) to be performed and the second value is the sides of the dice to be rolled.
 ```
 {
@@ -35,9 +36,11 @@ To request a roll of the dice, send a JSON object with one array, keyed as "roll
 ```
 ---
 ## GET method
-Any sequence of rolls of n-sided die can be requested with a get request to URL/rollcount/n-sides/rollcount/n-sides...
+
+Any sequence of rolls of n-sided die can be requested with a get request to the URL followed by slash seperated values: URL/rollcount/n-sides/rollcount/n-sides...
 ---
 ## Error handling
+
 dice-roll will substitute a six sided die in for mismatched requests, the assumption being that six sided dice are most commonly rolled.
 *Example:*
 ```
