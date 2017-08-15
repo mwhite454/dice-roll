@@ -1,0 +1,22 @@
+{
+  "name": "dice-roll",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "description": "A simple dice rolling API to return result of rolling any number of n-sided dice x times.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "micro",
+    "dev": "micro-dev"
+  },
+  "author": "mwhite454",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "micro": "^8.0.2",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {
+    "micro-dev": "^1.2.0"
+  }
+}
