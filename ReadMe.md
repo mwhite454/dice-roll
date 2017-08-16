@@ -31,24 +31,25 @@ To request a roll of the dice, send a JSON object with one array, keyed as "roll
 ```
 {
 "rolls":[3,6,3, 20]
-\\-> Three rolls of a six sided die, followed by three rolls of a twenty sided die
+//-> Three rolls of a six sided die, followed by three rolls of a twenty sided die
 }
 ```
 ---
 ## GET method
 
 Any sequence of rolls of n-sided die can be requested with a get request to the URL followed by slash seperated values: URL/rollcount/n-sides/rollcount/n-sides...
+
 ---
 ## Error handling
 
 dice-roll will substitute a six sided die in for mismatched requests, the assumption being that six sided dice are most commonly rolled.
 *Example:*
 ```
-\\unbalanced request where the last request does not have number of sides specified
+//An unbalanced request where the last request does not have number of sides specified
 {
 "rolls":[3,6,3,20,12]
 }
-\\result
+//Result
 {
     "msg": "Roll Complete",
     "theDate": "2017-08-15T20:05:34.441Z",
